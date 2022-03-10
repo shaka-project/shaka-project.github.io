@@ -1,0 +1,6 @@
+name: Shaka Project Documentation
+markdown: GFM
+#theme: jekyll-theme-minimal
+
+plugins:
+  - jemoji
