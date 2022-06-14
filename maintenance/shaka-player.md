@@ -140,6 +140,11 @@ for older smart TVs.  In that same release, we removed deprecated methods,
 configurations that were added to maintain compatibility with older releases,
 etc.  Many of them had been marked deprecated for 6-12 months already.
 
+Breaking changes need to be listed in
+[`docs/tutorials/upgrade.md`](https://github.com/shaka-project/shaka-player/blob/main/docs/tutorials/upgrade.md),
+with details on what application developers will need to do to cope with each
+change.
+
 
 ## Internal Release Processes
 

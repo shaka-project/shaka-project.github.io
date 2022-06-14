@@ -6,12 +6,13 @@ Issue triage should be handled regularly (recommend short daily sessions or
 longer weekly sessions) to keep response times low.
 
 We use an open-source tool called
-[Triage Party](https://triage-party.shakalab.rocks/) to triage GitHub issues
+[Triage Party](https://github.com/google/triage-party) to triage GitHub issues
 and PRs.  This provides a unified view of issues across all of our repositories.
 Though it is meant for maintainers, it is accessible to anyone, and does not
 have any write permissions to any repos.
 
-Triage Party provides views that are scoped to specific groups of projects:
+Our Triage Party instance provides views that are scoped to specific groups of
+projects:
  - [Shaka Player](https://triage-party.shakalab.rocks/s/Player)
  - [Shaka Packager](https://triage-party.shakalab.rocks/s/Packager)
  - [Shaka Player Embedded](https://triage-party.shakalab.rocks/s/Embedded)
@@ -90,7 +91,8 @@ If a PR title does not meet the requirements, a required check will fail and
 the PR cannot be merged.  As a maintainer, you can simply edit the PR title,
 and the check will be run again.
 
-Maintainers should install the [Squashed Merge Message browser extension](https://github.com/zachwhaley/squashed-merge-message#install)
+If you are a maintainer, you should install the
+[Squashed Merge Message browser extension](https://github.com/zachwhaley/squashed-merge-message#install)
 to make sure your PR commits match the PR title and description.  The extension
 will override the default commit message provided by GitHub when you merge a PR.
 (If the extension doesn't work the first time, just reload the page.)
