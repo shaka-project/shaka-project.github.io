@@ -52,7 +52,13 @@ git checkout v3.3.x
 # Inspect all commits since a particular main-branch tag.
 # If the most recent v3.3.x release was v3.3.1, the tag
 # v3.3.1-main is the same point in history for the main branch.
-interactive-cherry-pick v3.3.1-main upstream main
+interactive-cherry-pick v3.3.1-main
+
+# If you don't use the recommended "upstream" remote name,
+# you can specify the name of your remote.  For example,
+# if you named the shaka-project/shaka-player remote "google",
+# you could run this to cherry-pick from that specific remote:
+interactive-cherry-pick v3.3.1-main google
 ```
 
 Pre-work:
@@ -103,6 +109,21 @@ wait to batch up any particular number of changes or any particular significant
 features.
 
 
+### Chromecast app IDs for feature releases
+
+As long as we have our own Cast communication in Shaka Player (see
+https://github.com/shaka-project/shaka-player/issues/4214 for plans to change
+this), each feature release branch needs its own Cast receiver app registered.
+The newly registered ID must be put in `demo/index.html` and
+`docs/tutorials/ui.md` (search `data-shaka-player-cast-receiver-id` and
+`castReceiverAppId`).
+
+The registration must currently be done by Google.  It is acceptable for a
+non-Google maintainer to make a feature release, then ask the team at Google to
+follow up with an updated receiver ID in a `.1` release afterward.  The impact
+will only be to the demo app and documentation.
+
+
 ## Branch Maintenance Policy
 
 We will cherry-pick bug fixes to LTS branches, plus the most recent 2 release
@@ -117,6 +138,8 @@ There are two kinds of branches we will dub LTS:
    to receive fixes until CAF upgrades to a newer Shaka Player release by
    default
    - _As of June, 2022, this is currently v3.2._
+   - _Cherry-picking for any CAF-specific branch is the responsibility of the
+     team at Google, rather than non-Google maintainers._
 
 In addition to LTS branches, the most recent two branches will always receive
 fixes.  If the most recent release branch is v4.1, the most recent two branches
@@ -154,7 +177,8 @@ these processes are internal-only (go/shaka-player).
 
  1. Update the Chromecast receiver app URLs for the Shaka Player Demo
 
-    > :pencil: **TODO**: Automate this!
+    > :pencil: **TODO**: Create subdomains in appspot that point to the latest
+    > release for a branch, to eliminate the need to update receiver app URLs.
 
  1. Update Google3 (internal source repo)
 
@@ -163,10 +187,6 @@ these processes are internal-only (go/shaka-player).
  1. Update [Google Hosted Libraries](https://developers.google.com/speed/libraries)
 
     > :pencil: **TODO**: Automate this?
-
- 1. Announce the release via email
-
-    > :pencil: **TODO**: Automate this or deprecate the practice!
 
 
 ## History
