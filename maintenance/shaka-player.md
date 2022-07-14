@@ -95,6 +95,10 @@ Cherry-picking:
    about whether porting the fix to the branch is worth the effort.  The
    maintainer will have to consider both the severity of the issue and the
    difficulty of fixing conflicts or reimplementation.
+   - If a conflict is trivial to resolve, or if there are no conflicts in a
+     commit, the commit may be pushed directly to the release branch.
+   - If reimplementation of a commit is required, please submit a PR to the
+     branch instead of pushing directly.
  - Non-code changes (docs, tests, demo, etc) are sometimes cherry-picked to
    branches, depending on what the change is and whether it makes sense for
    that branch.
