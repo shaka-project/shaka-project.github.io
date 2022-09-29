@@ -1,6 +1,9 @@
 # Maintenance Processes
 
-## Issue and PR Triage
+<details>
+<summary>
+<h2>Issue and PR Triage</h2>
+</summary>
 
 Issue triage should be handled regularly (recommend short daily sessions or
 longer weekly sessions) to keep response times low.
@@ -43,9 +46,13 @@ Our triage party instance is customized, configured, built, and deployed from
 [shaka-project/triage-party-config](https://github.com/shaka-project/triage-party-config).
 Any time changes are merged to the `main` branch, the instance is automatically
 updated through Google Cloud Build and deployed to Google Cloud Run.
+</details>
 
 
-## Versioning
+<details>
+<summary>
+<h2>Versioning</h2>
+</summary>
 
 ### Semantic Versioning
 
@@ -79,9 +86,13 @@ number is incremented.  If only backward compatible features have been added,
 the MINOR number is incremented.  If breaking changes have been added, the
 MAJOR number is incremented.  See the rules for
 ["Semantic Versioning"](#semantic-versioning) above.
+</details>
 
 
-## PR Process
+<details>
+<summary>
+<h2>PR Process</h2>
+</summary>
 
 PR titles and descriptions should follow [Conventional Commits syntax](https://www.conventionalcommits.org/).
 This is enforced already by GitHub Actions for most of our repositories
@@ -99,9 +110,13 @@ will override the default commit message provided by GitHub when you merge a PR.
 
 This ensures that PR commits follow Conventional Commits syntax, which will in
 turn drive the generation of changelogs and releases.
+</details>
 
 
-## General Release Process
+<details>
+<summary>
+<h2>Release Process</h2>
+</summary>
 
 Releases are generally automated through a tool called [Release Please](https://github.com/googleapis/release-please).
 A GitHub Action will watch the commit messages of all new changes to the `main`
@@ -133,9 +148,13 @@ as any NPM, PyPi, or other releases necessary.
  - [Shaka Player](shaka-player.md)
 
 > :pencil: **TODO**: Add more per-project release process docs.
+</details>
 
 
-## Fixing Release Notes
+<details>
+<summary>
+<h2>Fixing Release Notes</h2>
+</summary>
 
 If you merge a PR and want to fix the release notes for it before release, you
 can edit the PR description and append an "override" block.  This is a feature
@@ -154,9 +173,13 @@ END_COMMIT_OVERRIDE
 
 Upstream documentation:
   https://github.com/googleapis/release-please#how-can-i-fix-release-notes
+</details>
 
 
-## Automated Maintenance
+<details>
+<summary>
+<h2>Automated Maintenance</h2>
+</summary>
 
 See also these automated systems which are widely deployed across our repos:
 
@@ -164,3 +187,4 @@ See also these automated systems which are widely deployed across our repos:
  - https://github.com/shaka-project/shaka-github-tools/tree/main/sync-labels
  - https://github.com/shaka-project/shaka-github-tools/tree/main/validate-pr-title
  - https://github.com/shaka-project/shaka-github-tools/blob/main/.github/workflows/sync-common-workflows.yaml
+</details>
