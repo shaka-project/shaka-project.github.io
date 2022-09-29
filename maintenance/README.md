@@ -137,7 +137,6 @@ as any NPM, PyPi, or other releases necessary.
 
 > :information_source: **NOTE**: The following repositories have not yet
 > adopted the release automation described here:
-> - [Generic WebDriver Server](https://github.com/shaka-project/generic-webdriver-server)
 > - [Shaka Packager](https://github.com/shaka-project/shaka-packager)
 > - [Shaka Player Embedded](https://github.com/shaka-project/shaka-player-embedded)
 > - [Shaka Streamer](https://github.com/shaka-project/shaka-streamer)

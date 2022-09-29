@@ -165,6 +165,9 @@ fixes.  If the most recent release branch is v4.1, the most recent two branches
 would be v4.1 and v4.0.  After v4.2 is released, the most recent two branches
 would become v4.2 and v4.1.  Unless v4.0 was the current CAF branch, we would
 stop fixing v4.0 when v4.2 is released.
+
+To see current branch maintenance status, refer to
+[maintained-branches.md in Shaka Player.](https://github.com/shaka-project/shaka-player/blob/main/maintained-branches.md#readme)
 </details>
 
 
