@@ -1,0 +1,17 @@
+
+    <link rel="icon" href="/favicon.ico">
+
+    <script>
+      window.addEventListener('load', () => {
+        // If deep-linking, open the relevant details section.
+        if (location.hash) {
+          const heading = document.querySelector(location.hash);
+          if (heading) {
+            const details = heading.closest('details');
+            if (details) {
+              details.open = true;
+            }
+          }
+        }
+      });
+    </script>

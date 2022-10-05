@@ -1,0 +1,8 @@
+---
+---
+
+@import "{{ site.theme }}";
+
+/* Make h2 elements sit nicely inside the <summary> blocks so we can collapse
+ * large sections of the docs. */
+h2 { display: inline-block; }

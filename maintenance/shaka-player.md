@@ -4,7 +4,10 @@ These are project-specific processes in addition to the
 [general release process documentation](./).
 
 
-## Release Branches
+<details>
+<summary>
+<h2>Release Branches</h2>
+</summary>
 
 Feature release are made from the `main` branch.  Any time that happens, our
 release automation will automatically create a release branch.  So, for
@@ -14,9 +17,13 @@ automatically created.
 Future bug fixes would be cherry-picked from `main` to `v4.1.x` to create the
 releases `v4.1.1`, `v4.1.2`, etc., and the branch would become more stable over
 time.
+</details>
 
 
-## Cherry-Picking
+<details>
+<summary>
+<h2>Cherry-Picking</h2>
+</summary>
 
 Features are never cherry-picked to a release branch.  This would go against
 [semantic versioning](https://semver.org/), which says that a patch-level
@@ -104,9 +111,13 @@ Cherry-picking:
    that branch.
  - **Features are never cherry-picked** to release branches, as this would
    break semantic versioning.
+</details>
 
 
-## Release Policy
+<details>
+<summary>
+<h2>Release Policy</h2>
+</summary>
 
 Maintainers can make a feature release at almost any time.  There is no need to
 wait to batch up any particular number of changes or any particular significant
@@ -126,9 +137,13 @@ The registration must currently be done by Google.  It is acceptable for a
 non-Google maintainer to make a feature release, then ask the team at Google to
 follow up with an updated receiver ID in a `.1` release afterward.  The impact
 will only be to the demo app and documentation.
+</details>
 
 
-## Branch Maintenance Policy
+<details>
+<summary>
+<h2>Branch Maintenance Policy</h2>
+</summary>
 
 We will cherry-pick bug fixes to LTS branches, plus the most recent 2 release
 branches.
@@ -151,8 +166,15 @@ would be v4.1 and v4.0.  After v4.2 is released, the most recent two branches
 would become v4.2 and v4.1.  Unless v4.0 was the current CAF branch, we would
 stop fixing v4.0 when v4.2 is released.
 
+To see current branch maintenance status, refer to
+[maintained-branches.md in Shaka Player.](https://github.com/shaka-project/shaka-player/blob/main/maintained-branches.md#readme)
+</details>
 
-## When to Make Breaking Changes
+
+<details>
+<summary>
+<h2>When to Make Breaking Changes</h2>
+</summary>
 
 We should make breaking changes infrequently if we can.  The goal should be one
 breaking release per year at most.  If changes can be made in a
@@ -171,9 +193,13 @@ Breaking changes need to be listed in
 [`docs/tutorials/upgrade.md`](https://github.com/shaka-project/shaka-player/blob/main/docs/tutorials/upgrade.md),
 with details on what application developers will need to do to cope with each
 change.
+</details>
 
 
-## Internal Release Processes
+<details>
+<summary>
+<h2>Internal Release Processes</h2>
+</summary>
 
 After making public releases, the following internal steps are taken at Google
 to make the release available in our internal systems.  Detailed documents on
@@ -191,9 +217,13 @@ these processes are internal-only (go/shaka-player).
  1. Update [Google Hosted Libraries](https://developers.google.com/speed/libraries)
 
     > :pencil: **TODO**: Automate this?
+</details>
 
 
-## History
+<details>
+<summary>
+<h2>History</h2>
+</summary>
 
 Before v3.0, we didn't _strictly_ follow semantic versioning.
 
@@ -207,3 +237,4 @@ release branches to get those out more quickly.
 
 Since v3.0, we have stopped these practices and followed semantic versioning
 strictly.
+</details>
