@@ -102,12 +102,6 @@ If a PR title does not meet the requirements, a required check will fail and
 the PR cannot be merged.  As a maintainer, you can simply edit the PR title,
 and the check will be run again.
 
-If you are a maintainer, you should install the
-[Squashed Merge Message browser extension](https://github.com/zachwhaley/squashed-merge-message#install)
-to make sure your PR commits match the PR title and description.  The extension
-will override the default commit message provided by GitHub when you merge a PR.
-(If the extension doesn't work the first time, just reload the page.)
-
 This ensures that PR commits follow Conventional Commits syntax, which will in
 turn drive the generation of changelogs and releases.
 </details>

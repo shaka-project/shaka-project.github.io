@@ -7,10 +7,6 @@ deviate from them.
    1. Outside Google: https://cli.github.com/
    1. Inside Google: http://go/gh-cli
 
-1. **(Maintainers Only)** Install the
-   [Squashed Merge Message browser extension](https://github.com/zachwhaley/squashed-merge-message#install).
-   For more details, see the [Maintenance docs](../maintenance/#pr-process).
-
 1. Log in:
    ```sh
    gh auth login
