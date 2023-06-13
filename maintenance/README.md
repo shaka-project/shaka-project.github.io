@@ -134,13 +134,6 @@ as any NPM, PyPi, or other releases necessary.
 > - [Shaka Packager](https://github.com/shaka-project/shaka-packager)
 > - [Shaka Player Embedded](https://github.com/shaka-project/shaka-player-embedded)
 > - [Shaka Streamer](https://github.com/shaka-project/shaka-streamer)
-
-
-### Per-Project Release Processes
-
- - [Shaka Player](shaka-player.md)
-
-> :pencil: **TODO**: Add more per-project release process docs.
 </details>
 
 
@@ -180,4 +173,15 @@ See also these automated systems which are widely deployed across our repos:
  - https://github.com/shaka-project/shaka-github-tools/tree/main/sync-labels
  - https://github.com/shaka-project/shaka-github-tools/tree/main/validate-pr-title
  - https://github.com/shaka-project/shaka-github-tools/blob/main/.github/workflows/sync-common-workflows.yaml
+</details>
+
+
+<details>
+<summary>
+<h2>Per-Project Processes</h2>
+</summary>
+
+ - [Shaka Player](shaka-player.md)
+
+> :pencil: **TODO**: Add more per-project process docs.
 </details>
