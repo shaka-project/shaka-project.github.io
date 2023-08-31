@@ -142,6 +142,27 @@ will only be to the demo app and documentation.
 
 <details>
 <summary>
+<h2>Testing PRs and Releases</h2>
+</summary>
+
+PRs can now easily be tested in the lab by sending commands to `@shaka-bot`.
+For example, any maintainer may comment on a PR with `@shaka-bot test` to
+trigger a full test run in the lab.  This command is not available to
+non-maintainers.
+
+**All release PRs should be tested in the lab prior to merging them.**
+
+A full set of commands can be found by commenting `@shaka-bot help` on any PR.
+
+These commands and handled by the workflow in
+[`.github/workflows/talk-to-shaka-bot.yaml`](https://github.com/shaka-project/shaka-player/blob/main/.github/workflows/talk-to-shaka-bot.yaml),
+and the implementation is in
+[`.github/workflows/shaka-bot-commands/`](https://github.com/shaka-project/shaka-player/tree/main/.github/workflows/shaka-bot-commands).
+</details>
+
+
+<details>
+<summary>
 <h2>Branch Maintenance Policy</h2>
 </summary>
 
