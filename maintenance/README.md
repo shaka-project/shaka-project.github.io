@@ -18,7 +18,6 @@ Our Triage Party instance provides views that are scoped to specific groups of
 projects:
  - [Shaka Player](https://triage-party.shakalab.rocks/s/Player)
  - [Shaka Packager](https://triage-party.shakalab.rocks/s/Packager)
- - [Shaka Player Embedded](https://triage-party.shakalab.rocks/s/Embedded)
  - [Shaka Streamer](https://triage-party.shakalab.rocks/s/Streamer)
  - [Infrastructure projects](https://triage-party.shakalab.rocks/s/Infra)
  - [EME Logger](https://triage-party.shakalab.rocks/s/Logger)
@@ -132,7 +131,6 @@ as any NPM, PyPi, or other releases necessary.
 > :information_source: **NOTE**: The following repositories have not yet
 > adopted the release automation described here:
 > - [Shaka Packager](https://github.com/shaka-project/shaka-packager)
-> - [Shaka Player Embedded](https://github.com/shaka-project/shaka-player-embedded)
 > - [Shaka Streamer](https://github.com/shaka-project/shaka-streamer)
 </details>
 
