@@ -17,6 +17,11 @@ automatically created.
 Future bug fixes would be cherry-picked from `main` to `v4.1.x` to create the
 releases `v4.1.1`, `v4.1.2`, etc., and the branch would become more stable over
 time.
+
+**NOTE**: Please do **not** make bugfix releases from `main`.  The automation
+will offer you a release PR for minor bugfixes from `main`, but please ignore
+it.  Please **only** make _feature releases_ from `main`.  This is an
+opportunity for improvement in our release automation.
 </details>
 
 
