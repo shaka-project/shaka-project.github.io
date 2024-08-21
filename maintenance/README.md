@@ -130,7 +130,6 @@ as any NPM, PyPi, or other releases necessary.
 
 > :information_source: **NOTE**: The following repositories have not yet
 > adopted the release automation described here:
-> - [Shaka Packager](https://github.com/shaka-project/shaka-packager)
 > - [Shaka Streamer](https://github.com/shaka-project/shaka-streamer)
 </details>
 
