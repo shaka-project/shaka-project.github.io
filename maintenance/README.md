@@ -8,43 +8,11 @@
 Issue triage should be handled regularly (recommend short daily sessions or
 longer weekly sessions) to keep response times low.
 
-We use an open-source tool called
-[Triage Party](https://github.com/google/triage-party) to triage GitHub issues
-and PRs.  This provides a unified view of issues across all of our repositories.
-Though it is meant for maintainers, it is accessible to anyone, and does not
-have any write permissions to any repos.
+Triage is done directly on GitHub.  For each newly-reported issue, set two
+native GitHub issue fields:
 
-Our Triage Party instance provides views that are scoped to specific groups of
-projects:
- - [Shaka Player](https://triage-party.shakalab.rocks/s/Player)
- - [Shaka Packager](https://triage-party.shakalab.rocks/s/Packager)
- - [Shaka Streamer](https://triage-party.shakalab.rocks/s/Streamer)
- - [Infrastructure projects](https://triage-party.shakalab.rocks/s/Infra)
- - [EME Logger](https://triage-party.shakalab.rocks/s/Logger)
-
-You can navigate between projects using the headings in the top-left:
-
-![Project navigation screenshot](project-nav.png)
-
-Within each project, there are tasks for triage, fixing bugs, and cleanup.  By
-default, you get collections associated with triage.  You can navigate between
-tasks by clicking the headings in the top-right:
-
-![Task navigation screenshot](task-nav.png)
-
-The issues in the triage collections should be investigated in order.  For
-example, "untyped issues" should have their type set (`type: bug`,
-`type: enhancement`, `type: question`, etc.), then "unprioritized issues"
-should have a priority label set (`priority: P1`, `priority: P2`, etc.)
-
-Each task has a description, and each issue in that list can be clicked to open
-a new tab to the issue on GitHub.  Tasks can be collapsed by clicking on the
-heading.
-
-Our triage party instance is customized, configured, built, and deployed from
-[shaka-project/triage-party-config](https://github.com/shaka-project/triage-party-config).
-Any time changes are merged to the `main` branch, the instance is automatically
-updated through Google Cloud Build and deployed to Google Cloud Run.
+ 1. **Type** (the "type" field): Bug, Feature, Docs, CI, or Question.
+ 2. **Priority** (the "Priority" field): Urgent, High, Medium, or Low.
 </details>
 
 
